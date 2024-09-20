@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Anunsyoapp"
 include(":app")
+include(":admincrud")
