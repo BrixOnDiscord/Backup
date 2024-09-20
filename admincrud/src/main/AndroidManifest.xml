@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anunsyoapp">
         <activity
+            android:name=".TOAWater_Interruption"
+            android:exported="false" />
+        <activity
             android:name=".Admin"
             android:exported="true">
             <intent-filter>
