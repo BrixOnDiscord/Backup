@@ -10,7 +10,7 @@
         android:theme="@style/Theme.Anunsyoapp">
         <activity
             android:name=".TOAWater_Interruption"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Admin"
             android:exported="true">
