@@ -10,23 +10,21 @@
 
     <!--Appname-->
 
-
     <Button
         android:id="@+id/create_announcement"
         android:layout_width="323dp"
-
         android:layout_height="77dp"
         android:layout_marginTop="272dp"
         android:backgroundTint="@color/gray"
-        android:text="Create Announcement"
-        android:textSize="25dp"
-
+        android:text="CREATE ANNOUNCEMENT"
+        android:textSize="22dp"
         android:textStyle="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.700" />
 
     <Button
         android:id="@+id/log_out"
@@ -44,7 +42,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
+        app:layout_constraintVertical_bias="0.890" />
 
     <View
         android:id="@+id/admin_line2"
@@ -56,20 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
-
-    <View
-        android:id="@+id/admin_line1"
-        android:layout_width="359dp"
-        android:layout_height="4dp"
-        android:layout_marginBottom="496dp"
-
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.850" />
 
     <ImageView
         android:id="@+id/admin_logo"
@@ -79,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086"
+        app:layout_constraintVertical_bias="0.125"
         app:srcCompat="@drawable/admin_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
