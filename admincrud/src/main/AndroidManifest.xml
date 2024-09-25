@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anunsyoapp">
         <activity
+            android:name=".Benecointerruption_create"
+            android:exported="false" />
+        <activity
             android:name=".Create_Announcement"
             android:exported="true" />
         <activity
