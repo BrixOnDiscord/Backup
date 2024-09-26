@@ -16,7 +16,7 @@
         android:layout_height="77dp"
         android:layout_marginTop="272dp"
         android:layout_marginBottom="49dp"
-        android:background="@drawable/create_announcement_btn"
+        android:backgroundTint="@color/gray"
         android:text="CREATE ANNOUNCEMENT"
         android:textColor="@color/black"
         android:textSize="22dp"
@@ -58,8 +58,8 @@
 
     <ImageView
         android:id="@+id/admin_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="324dp"
+        android:layout_height="181dp"
         app:layout_constraintBottom_toTopOf="@+id/create_announcement"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
