@@ -10,30 +10,92 @@
     tools:layout_editor_absoluteX="-4dp"
     tools:layout_editor_absoluteY="152dp">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/water_interruption_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/racingsansone"
+        android:text="Water Interruption"
+        android:textColor="@color/dirtywhite"
+        android:layout_marginTop="20dp"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/appname"
-            android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continuebtn"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bgtextentry"
+        android:text="Continue"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/popins"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="376dp"
+        android:layout_height="604dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/continuebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/water_interruption_title"
+        app:layout_constraintVertical_bias="0.422">
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="@font/racingsansone"
-            android:text="Water Interruption"
-            android:textColor="#FFFFFF"
-            android:textSize="70sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.484"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bgtextentry"
+            android:hint="Enter a Date"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/allerta"/>
+
+        <EditText
+            android:id="@+id/areas_affected"
+            android:layout_width="327dp"
+            android:layout_height="197dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bgtextentry"
+            android:hint="Enter Areas Affected"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/allerta"/>
+
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="327dp"
+            android:layout_height="197dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bgtextentry"
+            android:hint="Enter Reason"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/allerta"/>
 
 
-            />
-    </RelativeLayout>
-
-
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
