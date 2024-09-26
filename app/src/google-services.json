@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "563728452288",
+    "project_id": "anunsyoapp",
+    "storage_bucket": "anunsyoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563728452288:android:3963389e09cec93f2c3b25",
+        "android_client_info": {
+          "package_name": "com.baguio.anunsyoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKXo9ljgAbmu3NvUiUiYPdvMbupHFq_UY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
