@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.google.gms.google.services)
 
 
+
 }
 
 android {
@@ -53,7 +54,6 @@ dependencies {
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    implementation(project(":admincrud"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
