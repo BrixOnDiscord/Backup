@@ -5,74 +5,80 @@
     android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Public_and_Admin"
-    android:background="@drawable/baguio_bg">
+    android:background="@color/blue"
+    tools:context=".Public_and_Admin">
+
 
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/lightblue" />  <!-- Semi-transparent -->
+        android:background="@drawable/baguio_bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <!--Appname-->
+
+    <!--Public user-->
+
+    <!--Admin-->
+
     <TextView
         android:id="@+id/appname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/oleoscript_regular"
+        android:layout_marginBottom="272dp"
+        android:fontFamily="@font/racingsansone"
         android:text="AnunsYou"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/dirtywhite"
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="@+id/logoImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <!--Logo-->
     <ImageView
         android:id="@+id/logoImage"
-        android:layout_width="470dp"
-        android:layout_height="357dp"
+        android:layout_width="409dp"
+        android:layout_height="340dp"
         android:contentDescription="Logo"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHeight_percent="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.287" />
+        app:layout_constraintVertical_bias="0.323"
+        app:layout_constraintWidth_percent="0.7" />
 
-    <!--Public user-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/publicbtn"
-        android:layout_width="280dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="200dp"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="456dp"
         android:background="@drawable/bgbutton2ndpage"
+        android:fontFamily="@font/popins"
         android:text="PUBLIC USER"
         android:textColor="@color/dirtywhite"
-        android:textSize="25dp"
+        android:textSize="23dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logoImage" />
 
-    <!--Admin-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/adminbtn"
-        android:layout_width="280dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="104dp"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
         android:background="@drawable/bgbutton2ndpage"
+        android:fontFamily="@font/popins"
         android:text="Admin"
         android:textColor="@color/dirtywhite"
-        android:textSize="25dp"
+        android:textSize="23dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publicbtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,13 +20,7 @@ class MainActivity : AppCompatActivity() {
         btnGetstarted.setOnClickListener {
             val getstarted_Intent = Intent(this,Public_and_Admin::class.java)
             startActivity(getstarted_Intent)
-
         }
-
-
-
-
     }
-
 
 }
