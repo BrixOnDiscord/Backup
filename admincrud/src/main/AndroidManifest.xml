@@ -10,7 +10,7 @@
         android:theme="@style/Theme.Anunsyoapp">
         <activity
             android:name=".Benecointerruption_create"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Create_Announcement"
             android:exported="true" />
