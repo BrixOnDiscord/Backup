@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.gms.google.services) // Google Services plugin for Firebase
 }
 
 android {
@@ -33,21 +33,28 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
-    buildFeatures{
-        viewBinding = true
     }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.firebase.database)
+
+    // Firebase dependencies
+    implementation(libs.firebase.database)   // Firebase Realtime Database
+    //implementation(libs.firebase.firestore)  // Firebase Firestore
+
+    // Test dependencies
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+//Google Services JSON configuration
+apply(plugin = "com.google.gms.google-services")

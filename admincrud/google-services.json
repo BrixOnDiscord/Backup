@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "563728452288",
-    "project_id": "anunsyoapp",
-    "storage_bucket": "anunsyoapp.appspot.com"
+    "project_number": "984350066983",
+    "firebase_url": "https://anunsyoapp-test1-default-rtdb.firebaseio.com",
+    "project_id": "anunsyoapp-test1",
+    "storage_bucket": "anunsyoapp-test1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:563728452288:android:ae853b3704d65a8b2c3b25",
+        "mobilesdk_app_id": "1:984350066983:android:ad7ef7bbc6580243b2c102",
         "android_client_info": {
           "package_name": "com.baguio.admincrud"
         }
@@ -15,26 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBKXo9ljgAbmu3NvUiUiYPdvMbupHFq_UY"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:563728452288:android:3963389e09cec93f2c3b25",
-        "android_client_info": {
-          "package_name": "com.baguio.anunsyoapp"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBKXo9ljgAbmu3NvUiUiYPdvMbupHFq_UY"
+          "current_key": "AIzaSyCUrNzS41a8Wh1Sv2ogVHbROeWPDQ3CcmQ"
         }
       ],
       "services": {

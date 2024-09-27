@@ -10,49 +10,72 @@
     tools:layout_editor_absoluteX="-4dp"
     tools:layout_editor_absoluteY="152dp">
 
+
     <TextView
         android:id="@+id/water_interruption_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/racingsansone"
+        android:paddingStart="10dp"
         android:text="Water Interruption"
         android:textColor="@color/dirtywhite"
-        android:layout_marginTop="20dp"
-        android:textSize="70sp"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/water_interruption_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:paddingStart="10dp"
+        android:text="Baguio Water District"
+        android:textColor="@color/dirtywhite"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/water_interruption_title"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/continuebtn"
-        android:layout_width="230dp"
-        android:layout_height="60dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
         android:background="@drawable/bgtextentry"
+        android:fontFamily="@font/popins"
         android:text="Continue"
+        android:textAllCaps="false"
         android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:fontFamily="@font/popins"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="376dp"
-        android:layout_height="604dp"
-        android:layout_margin="20dp"
+        android:layout_width="356dp"
+        android:layout_height="488dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/border_white"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/continuebtn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/water_interruption_title"
-        app:layout_constraintVertical_bias="0.422">
+        app:layout_constraintVertical_bias="0.272">
 
 
         <EditText
@@ -63,36 +86,36 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/allerta"
             android:hint="Enter a Date"
             android:padding="16dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/allerta"/>
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/areas_affected"
-            android:layout_width="327dp"
-            android:layout_height="197dp"
+            android:layout_width="314dp"
+            android:layout_height="155dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/allerta"
             android:hint="Enter Areas Affected"
             android:padding="16dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/allerta"/>
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/reason"
-            android:layout_width="327dp"
-            android:layout_height="197dp"
+            android:layout_width="314dp"
+            android:layout_height="155dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/allerta"
             android:hint="Enter Reason"
             android:padding="16dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/allerta"/>
+            android:textColor="@color/black" />
 
 
     </LinearLayout>
