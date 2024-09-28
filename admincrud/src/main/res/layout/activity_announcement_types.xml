@@ -8,6 +8,8 @@
     tools:context=".announcement_types"
     android:background="@color/blue">
 
+    <!--example-->
+
     <TextView
         android:id="@+id/type_of_announcement"
         android:layout_width="wrap_content"
@@ -29,90 +31,90 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.500" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/class_suspension"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="48dp"
-        android:background="@drawable/bgtextentry"
-        android:fontFamily="@font/orlega_one"
-        android:text="Class Suspension"
-        android:textColor="@color/black"
-        android:textSize="22dp"
-        android:textStyle="bold"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/class_suspension"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/orlega_one"
+            android:text="Class Suspension"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
 
-        app:layout_constraintBottom_toTopOf="@+id/work_suspension"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/work_suspension"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/work_suspension"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="44dp"
-        android:background="@drawable/bgtextentry"
-        android:fontFamily="@font/orlega_one"
-        android:text="Work Suspension"
-        android:textColor="@color/black"
-        android:textSize="22dp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/work_suspension"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/orlega_one"
+            android:text="Work Suspension"
+            android:textColor="@color/black"
+            android:textSize="22dp"
 
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/power_interruption"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/power_interruption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/power_interruption"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="36dp"
-        android:background="@drawable/bgtextentry"
-        android:fontFamily="@font/orlega_one"
-        android:text="Power Interruption"
-        android:textColor="@color/black"
-        android:textSize="22dp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/power_interruption"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/orlega_one"
+            android:text="Power Interruption"
+            android:textColor="@color/black"
+            android:textSize="22dp"
 
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/water_interruption"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/water_interruption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/water_interruption"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="36dp"
-        android:background="@drawable/bgtextentry"
-        android:fontFamily="@font/orlega_one"
-        android:text="Water Interruption"
-        android:textColor="@color/black"
-        android:textSize="22dp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/water_interruption"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/orlega_one"
+            android:text="Water Interruption"
+            android:textColor="@color/black"
+            android:textSize="22dp"
 
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/road_blocks"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/road_blocks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/road_blocks"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="28dp"
-        android:background="@drawable/bgtextentry"
-        android:fontFamily="@font/orlega_one"
-        android:text="Road Blocks"
-        android:textColor="@color/black"
-        android:textSize="22dp"
-        android:textStyle="bold"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/road_blocks"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/orlega_one"
+            android:text="Road Blocks"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
 
-        app:layout_constraintBottom_toTopOf="@+id/type_announcement_line2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/type_announcement_line2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/type_announcement_line1"
