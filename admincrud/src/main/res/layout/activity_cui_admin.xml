@@ -81,19 +81,19 @@
         android:textSize="22dp"
 
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cud_upload"
+        app:layout_constraintBottom_toTopOf="@+id/cud_update"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/cud_upload"
+        android:id="@+id/cud_update"
         android:layout_width="340dp"
         android:layout_height="60dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/bgtextentry"
         android:fontFamily="@font/orlega_one"
-        android:text="Upload"
+        android:text="Update"
         android:textColor="@color/black"
         android:textSize="22dp"
 
