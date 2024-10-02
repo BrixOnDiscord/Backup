@@ -59,8 +59,8 @@
 
     <ImageView
         android:id="@+id/admin_logo"
-        android:layout_width="324dp"
-        android:layout_height="181dp"
+        android:layout_width="362dp"
+        android:layout_height="367dp"
         app:layout_constraintBottom_toTopOf="@+id/create_announcement"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -5,102 +5,128 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cui_admin"
-    android:background="@color/blue">
+    android:background="@color/blue"
+    tools:context=".cui_admin">
+
 
     <TextView
         android:id="@+id/type_of_announcement"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autoSizeMaxTextSize="1000dp"
-        android:autoSizeMinTextSize="1dp"
+        android:layout_width="399dp"
+        android:layout_height="96dp"
+        android:autoSizeMaxTextSize="100dp"
+        android:autoSizeMinTextSize="12sp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/orlega_one"
-        android:text="Announcement"
+        android:text="Select Announcement types"
         android:textAlignment="center"
         android:textColor="@color/dirtywhite"
-        android:textSize="50dp"
+        android:textSize="45sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/admin_cud_line1"
+        app:layout_constraintBottom_toTopOf="@+id/announcementlist"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/announcementlist"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/spinnerbg"
+
+        android:outlineAmbientShadowColor="@color/dirtywhite"
+        android:paddingStart="1dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/admin_cud_line2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="366dp"
+        android:layout_height="334dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_cud_line2"
+        app:layout_constraintVertical_bias="0.208">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cud_create"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/orlega_one"
+            android:text="Create"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cud_update"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/orlega_one"
+            android:text="Update"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cud_delete"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/orlega_one"
+            android:text="delete"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
 
     <View
         android:id="@+id/admin_cud_line1"
         android:layout_width="270dp"
         android:layout_height="4dp"
-
-        android:layout_marginBottom="60dp"
         android:background="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/cud_create"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.351" />
 
     <View
         android:id="@+id/admin_cud_line2"
         android:layout_width="270dp"
         android:layout_height="4dp"
-        android:layout_marginBottom="80dp"
-
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/cud_create"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/bgtextentry"
-        android:fontFamily="@font/orlega_one"
-        android:text="Create"
-        android:textColor="@color/black"
-        android:textSize="22dp"
-
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cud_delete"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/cud_delete"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/bgtextentry"
-        android:fontFamily="@font/orlega_one"
-        android:text="Delete"
-        android:textColor="@color/black"
-        android:textSize="22dp"
-
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cud_upload"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/cud_upload"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/bgtextentry"
-        android:fontFamily="@font/orlega_one"
-        android:text="Upload"
-        android:textColor="@color/black"
-        android:textSize="22dp"
-
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/admin_cud_line2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

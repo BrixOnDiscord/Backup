@@ -36,29 +36,24 @@
         android:text="Baguio Water District"
         android:textColor="@color/dirtywhite"
         android:textSize="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/water_interruption_title"
         app:layout_constraintVertical_bias="0.0" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/continuebtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/bgtextentry"
-        android:fontFamily="@font/popins"
-        android:text="Continue"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="386dp"
+        android:layout_height="609dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/water_interruption_title2"
+        app:layout_constraintVertical_bias="0.0">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -79,15 +74,28 @@
 
 
         <EditText
-            android:id="@+id/date"
-            android:layout_width="match_parent"
+            android:id="@+id/SW_advisory"
+            android:layout_width="314dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/bgtextentry"
             android:fontFamily="@font/allerta"
-            android:hint="Enter a Date"
+            android:hint="Enter Service Advisory"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/allerta"
+            android:hint="Enter Date"
             android:padding="16dp"
             android:textColor="@color/black" />
 
@@ -104,6 +112,8 @@
             android:padding="16dp"
             android:textColor="@color/black" />
 
+
+
         <EditText
             android:id="@+id/reason"
             android:layout_width="314dp"
@@ -113,12 +123,27 @@
             android:layout_marginEnd="10dp"
             android:background="@drawable/bgtextentry"
             android:fontFamily="@font/allerta"
-            android:hint="Enter Reason"
+            android:hint="others"
             android:padding="16dp"
             android:textColor="@color/black" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/continuebtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="70dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bgtextentry"
+            android:fontFamily="@font/popins"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
 
     </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,10 @@
     tools:context=".Public_and_Admin">
 
 
+    <!--Public user-->
+
+    <!--Admin-->
+
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -16,11 +20,6 @@
         android:background="@drawable/baguio_bg"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
-
-
-    <!--Public user-->
-
-    <!--Admin-->
 
     <TextView
         android:id="@+id/appname"
@@ -54,7 +53,7 @@
         android:id="@+id/publicbtn"
         android:layout_width="281dp"
         android:layout_height="60dp"
-        android:layout_marginTop="456dp"
+        android:layout_marginTop="88dp"
         android:background="@drawable/bgbutton2ndpage"
         android:fontFamily="@font/popins"
         android:text="PUBLIC USER"
@@ -63,7 +62,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/logoImage" />
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/adminbtn"
