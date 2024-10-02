@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Beneco_update"
+    android:background="@color/blue">
+        <TextView
+            android:id="@+id/power_interruption_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/racingsansone"
+            android:paddingStart="10dp"
+            android:text="Power Interruption"
+            android:textColor="@color/dirtywhite"
+            android:textSize="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <TextView
+            android:id="@+id/beneco_interruption_title2"
+            android:layout_width="251dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/allerta"
+            android:paddingStart="10dp"
+            android:text="Benguet Electric Cooperative"
+            android:textColor="@color/dirtywhite"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/power_interruption_title" />
+
+        <!-- NestedScrollView containing LinearLayout for scrollable content -->
+
+        <!-- Continue Button with proper constraints -->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="386dp"
+            android:layout_height="609dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beneco_interruption_title2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_white"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/referenceid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgtextentry"
+                    android:fontFamily="@font/allerta"
+                    android:hint="Enter UID to Update"
+                    android:padding="16dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/S_advisory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgtextentry"
+                    android:fontFamily="@font/allerta"
+                    android:hint="Enter Service Advisory"
+                    android:padding="16dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgtextentry"
+                    android:fontFamily="@font/allerta"
+                    android:hint="Enter a Date"
+                    android:padding="16dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/time_started"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgtextentry"
+                    android:fontFamily="@font/allerta"
+                    android:hint="Enter Time Started"
+                    android:padding="16dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/time_restored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgtextentry"
+                    android:fontFamily="@font/allerta"
+                    android:hint="Enter Time Restored"
+                    android:padding="16dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/cause"
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgtextentry"
+                    android:fontFamily="@font/allerta"
+                    android:hint="Cause"
+                    android:padding="16dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/areas_affected"
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgtextentry"
+                    android:fontFamily="@font/allerta"
+                    android:hint="Enter Areas Affected"
+                    android:padding="16dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/others"
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bgtextentry"
+                    android:fontFamily="@font/allerta"
+                    android:hint="Others (optional)"
+                    android:padding="16dp"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/continuebtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="70dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bgtextentry"
+                    android:fontFamily="@font/popins"
+                    android:text="Continue"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,7 +17,7 @@ class Create_Announcement : AppCompatActivity() {
         // go to announcement_types
         val btncreate_announcement = findViewById<Button>(R.id.create_announcement)
         btncreate_announcement.setOnClickListener {
-            val creatAnn_Intent = Intent(this,announcement_types::class.java)
+            val creatAnn_Intent = Intent(this,cui_admin::class.java)
             startActivity(creatAnn_Intent)
         }
     }

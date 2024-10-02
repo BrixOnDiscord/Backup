@@ -9,10 +9,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anunsyoapp">
         <activity
-            android:name=".cui_admin"
+            android:name=".RoadBlocks_publish"
+            android:exported="false" />
+        <activity
+            android:name=".RoadBlocks_create"
+            android:exported="false" />
+        <activity
+            android:name=".Others_publish"
+            android:exported="false" />
+        <activity
+            android:name=".Others_create"
+            android:exported="false" />
+        <activity
+            android:name=".Beneco_update"
+            android:exported="false" />
+        <activity
+            android:name=".Beneco_delete"
+            android:exported="false" />
+        <activity
+            android:name=".Badiwa_publish"
+            android:exported="false" />
+        <activity
+            android:name=".Beneco_publish"
             android:exported="true" />
         <activity
-            android:name=".announcement_types"
+            android:name=".cui_admin"
             android:exported="true" />
         <activity
             android:name=".Benecointerruption_create"
