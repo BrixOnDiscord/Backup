@@ -8,8 +8,6 @@
     tools:context=".announcement_types"
     android:background="@color/blue">
 
-    <!--example-->
-
     <TextView
         android:id="@+id/type_of_announcement"
         android:layout_width="wrap_content"
