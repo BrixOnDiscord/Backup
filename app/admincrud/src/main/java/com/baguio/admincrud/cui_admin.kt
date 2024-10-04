@@ -29,11 +29,11 @@ class cui_admin : AppCompatActivity() {
             // Get the selected item from the spinner
             val selectedItem = spinner.selectedItem.toString()
 
-            // Create the appropriate Intent based on the selected item
+            // Create the appropriate Intent based on the selected item CREATE
             val createIntent: Intent = when (selectedItem) {
                 "Power Interruption" -> Intent(this, Benecointerruption_create::class.java) // Create for power interruption
                 "Water Interruption" -> Intent(this, TOAWater_Interruption::class.java) // Create for water interruption
-                //"Class Suspension" -> Intent(this, ClassSuspensionActivity::class.java) // Replace with your actual class
+                "Class Suspension" -> Intent(this, ClassSuspension_create::class.java) // Replace with your actual class
                 //"Work Suspension" -> Intent(this, WorkSuspensionActivity::class.java) // Replace with your actual class
                 "Road Blocks" -> Intent(this, RoadBlocks_create::class.java) // Replace with your actual class
                 "Others" -> Intent(this, Others_create::class.java) // Replace with your actual class
@@ -49,11 +49,11 @@ class cui_admin : AppCompatActivity() {
             val selectedItem = spinner.selectedItem.toString()
 
 
-            // Create the appropriate Intent based on the selected item for update
+            // Create the appropriate Intent based on the selected item for UPDATE
             val updateIntent: Intent = when (selectedItem) {
                 "Power Interruption" -> Intent(this, Beneco_update::class.java) // Update for power interruption
                 //"Water Interruption" -> Intent(this, TOAWater_Interruption::class.java) // Update for water interruption
-                //"Class Suspension" -> Intent(this, ClassSuspensionUpdateActivity::class.java) // Replace with your actual class
+                "Class Suspension" -> Intent(this, ClassSuspension_update::class.java) // Replace with your actual class
                 //"Work Suspension" -> Intent(this, WorkSuspensionUpdateActivity::class.java) // Replace with your actual class
                 //"Road Blocks" -> Intent(this, RoadBlocksUpdateActivity::class.java) // Replace with your actual class
                 //"Others" -> Intent(this, OthersUpdateActivity::class.java) // Replace with your actual class
@@ -69,7 +69,7 @@ class cui_admin : AppCompatActivity() {
             val selectedItem = spinner.selectedItem.toString()
 
 
-            // Create the appropriate Intent based on the selected item for update
+            // Create the appropriate Intent based on the selected item for DELETE
             val deleteIntent: Intent = when (selectedItem) {
                 "Power Interruption" -> Intent(
                     this,

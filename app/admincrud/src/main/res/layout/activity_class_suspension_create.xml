@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_class_suspension"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".ClassSuspension_create"
+    tools:layout_editor_absoluteX="-4dp"
+    tools:layout_editor_absoluteY="152dp">
+
+    <TextView
+        android:id="@+id/class_suspension_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/racingsansone"
+        android:paddingStart="10dp"
+        android:text="Class Suspension"
+        android:textColor="@color/dirtywhite"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <TextView
+        android:id="@+id/class_suspension_description"
+        android:layout_width="251dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/allerta"
+        android:paddingStart="10dp"
+        android:text="Baguio City Government"
+        android:textColor="@color/dirtywhite"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_suspension_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="386dp"
+        android:layout_height="609dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_suspension_description"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_class_suspension"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_white"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <!-- Add checkboxes for Elementary, High School, and College -->
+            <TextView
+                android:id="@+id/class_level_selection_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Class Levels:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/racingsansone"
+                android:textColor="@color/dirtywhite"/>
+
+            <CheckBox
+                android:id="@+id/checkboxElementary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elementary"
+                android:textColor="@color/dirtywhite"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkboxHighschool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High School"
+                android:textColor="@color/dirtywhite"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkboxCollege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College"
+                android:textColor="@color/dirtywhite"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/white" />
+
+            <EditText
+                android:id="@+id/SAdvisoryClassSuspension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bgtextentry"
+                android:fontFamily="@font/allerta"
+                android:hint="Enter Class Advisory"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dateClassSuspension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bgtextentry"
+                android:fontFamily="@font/allerta"
+                android:hint="Enter a Date"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/causeClassSuspension"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bgtextentry"
+                android:fontFamily="@font/allerta"
+                android:hint="Cause of Suspension"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/othersClassSuspension"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bgtextentry"
+                android:fontFamily="@font/allerta"
+                android:hint="Others (optional context)"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continuebtnClassSuspension"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="70dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bgtextentry"
+                android:fontFamily="@font/popins"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
