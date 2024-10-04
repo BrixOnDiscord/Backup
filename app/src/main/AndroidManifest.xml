@@ -49,6 +49,9 @@
 <activity android:name="com.baguio.admincrud.Create_Announcement"
             android:exported="true"
         -->
+        <activity
+            android:name=".cs_bebws"
+            android:exported="true" />
     </application>
 
 </manifest>
